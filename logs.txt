@@ -1,0 +1,35 @@
+commit b6ab114b2107698cc8012c809931934f9cd3a6cb (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:45:15 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit d658e5e58d10e94e606293edc0a1ee8389e692bf
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:42:27 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 94166e885e1ac8e607be5d15cfaf0ac7490635a9 (origin/bug1, bug1)
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:43:54 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 7eb1323c54e2c76767501f27a639696526b881d2
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:41:09 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit ed750d8fba45b55de2e59d6f41e46cda5487d77a
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:38:16 2024 +0200
+
+    Add staeter code
+
+commit 5bfd539ad6c7a2f4834bc85f4075885024d16e81
+Author: 213240 <nikolas.kuzmanovski@students.finki.ukim.mk>
+Date:   Fri Apr 5 10:33:01 2024 +0200
+
+    Initial commit

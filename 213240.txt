@@ -1,0 +1,81 @@
+4. mkdir SI_2024_lab1_213240 - правиме локален репозиториум којшто е со исто име како и оддалечениот репозиториум
+ git init - иницијализирање на Git во директориумот
+
+5. git remote add origin https://github.com/213240/SI_2024_lab1_213240.git - поврзување на локалниот репозиториум со оддалечениот репозиториум
+ git remote -v - за да провериме дали сме успешно поврзани
+ 
+6. nano README.md - правaм нов README фајл во кој запишувам име, презиме и индех
+ git add README.md - го додаваме фајлот на сцена
+ git commit -m "Initial commit" - правиме commit со порака "Initial commit"
+
+7. Ги симнам 3 фајла и рачно ги додадов во фолдерот SI_2024_lab1_213240
+ git add . - за да ги додаде сите фајлови на сцена
+ git commit - m "Add starter code" - правиме commit со порака "Add starter code"
+
+8. git push origin master - синхронизација на мастер со оддалечениот репозиториум
+
+9. git branch bug1 - правење нова гранка со име bug1
+ git branch bug2 - правење нова гранка со име bug2
+
+10. git checkout bug1 - префрлање на гранката bug1
+
+11. nano SILab1_1.java - отвараме фајлот SILab1_1.java
+ Во кодот место == пишуваме != за да го исполнит потребниот услов
+ git add . - а да ги додаде сите фајлови на сцена
+ git commit -m "Fix wrong condition in filterOddLengthStrings" - правиме commit со порака "Fix wrong condition in filterOddLengthStrings"
+
+12. git checkout bug2 - префрлање на гранката bug2
+
+13. nano SILab1_2.java - отвараме фајлот SILab1_2.java
+ Во кодот место < пишуваме >= за да го исполнит потребниот услов
+ git add . - а да ги додаде сите фајлови на сцена
+ git commit -m " Fix wrong condition in makeBigStringFrom" - правиме commit со порака "Fix wrong condition in makeBigStringFrom" 
+
+14. git checkout bug1 - префрлање на гранката bug1
+
+15. nano  SILab1Main.java - отвараме фајлот SILab1Main.java
+ Додаваме потребната линија код
+ git add . - а да ги додаде сите фајлови на сцена
+ git commit -m "Call method filterOddLengthStrings in main class" - правиме commit со порака "Call method filterOddLengthStrings in main class"
+
+16. git checkout bug2 - префрлање на гранката bug2
+
+17. nano  SILab1Main.java - отвараме фајлот SILab1Main.java
+ Додаваме потребната линија код
+ git add . - а да ги додаде сите фајлови на сцена
+ git commit -m "Call method makeBigStringFrom in main class" - правиме commit со порака "Call method makeBigStringFrom in main class"
+
+18. git push --all origin - синхронизација на сите гранки со одделчниот репозиториум
+
+19. git checkout master - се префрлам на master
+
+20. git merge bug1 - ja спојуваме гранката bug1 со master 
+ Нема никаков конфликт
+ Се спој со Fast-forward
+
+21. git push --all origin - синхронизација на сите гранки со одделчниот репозиториум
+
+22. git checkout bug2 - префрлање на гранката bug2
+
+23. git rebase master - правиме rebase на гранката bug2
+ Има конфликт кој го попречува овој чекор
+ Конфликтот го решив со тоа што со nano SILab1Main.java влегов на местото каде што настанува конфликтот и линиите код каде 
+ што се случува тој ги стаив една под друга за и двете да се извршат
+ git add . - за rebase да знае дека е направена промена и конфликтото е решен 
+ git rebase --continue - да продолжи процесот на rebase
+ Се отвори дел за порака каде ја оставив нормалната порака и излегов со :wq
+
+24. git checkout master - се префрлам на master
+
+25. git merge bug2 - ja спојуваме гранката bug2 со master 
+ Нема никаков конфликт
+ Се спој со Fast-forward
+
+26 и 27. git push --all origin --force - синхронизација на сите гранки со одделчниот репозиториум на сила поради тоа 
+ што git push --all origin даваше грешка
+
+28. Рачно ги додадов датотеките logs.txt и 213240.txt во фолдерот SI_2024_lab1_213240
+ git add . - да ги додаде сите фајлови на сцена
+ git commit -m " Final commit" - правиме commit со порака " Final commit"
+ 
+29. git push --all origin - синхронизација на сите гранки со одделчниот репозиториум
